@@ -83,6 +83,10 @@ hl.device({
     sensitivity = -0.5,
 })
 
+--##################
+--## KEYBINDINGS ###
+--##################
+
 local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
@@ -221,18 +225,6 @@ hl.config({
     xwayland = {
         force_zero_scaling = true,
     },
-    --##################
-    --## KEYBINDINGS ###
-    --##################
-    -- System Shortcuts
-    -- Move focus with mainMod + hjkl (Vim style)
-    -- Switch workspaces with mainMod + [0-9]
-    -- Move active window to a workspace
-    -- Workspace Mouse Scroll
-    -- -----------------------------------------------------
-    -- ThinkPad Hardware Keys (Volume, Brightness, Mic)
-    -- -----------------------------------------------------
-    -- PowerOff
 })
 
 hl.on("hyprland.start", function()
