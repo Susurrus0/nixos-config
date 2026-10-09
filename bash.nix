@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 let
-  flakePath = "~/.config/nix/flake.nix";
+  flakePath = "~/.config/nix/";
 in
 {
   programs.bash = {
