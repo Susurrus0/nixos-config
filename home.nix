@@ -22,7 +22,7 @@ in
   programs.home-manager.enable = true;
 
   xdg.configFile = {
-    "hypr/hyprland.conf".source = ./hyprland.conf;
+    "hypr/hyprland.lua".source = ./hyprland.lua;
   };
 
   services.swayosd.enable = true;
