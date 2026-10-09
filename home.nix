@@ -10,6 +10,7 @@ in
     ./bash.nix
     inputs.catppuccin.homeModules.catppuccin
     ./waybar.nix
+    ./hyprpaper.nix
   ];
 
   home.username = "bruno";
