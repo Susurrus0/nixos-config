@@ -132,11 +132,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = false;
-  };
-
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = false; # Open ports in the firewall for Steam Remote Play
