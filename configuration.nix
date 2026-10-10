@@ -122,12 +122,16 @@
     packages = with pkgs; [
       kdePackages.kate
     ];
+    shell = pkgs.zsh;
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Install firefox.
+  # Install firefox
   programs.firefox.enable = true;
+
+  # Install zsh
+  programs.zsh.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -182,7 +186,6 @@
     qt6.qtwayland
     s-tui
     stress
-    zsh
     # Packages for Hyprland
     kitty
     wofi
