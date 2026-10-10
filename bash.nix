@@ -17,7 +17,7 @@ in
     };
     profileExtra = ''
       if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-	exec start-hyprland
+        exec uwsm start -S hyprland-uwsm.desktop
       fi
     '';
   };
