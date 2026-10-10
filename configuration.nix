@@ -182,6 +182,7 @@
     qt6.qtwayland
     s-tui
     stress
+    zsh
     # Packages for Hyprland
     kitty
     wofi
