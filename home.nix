@@ -8,6 +8,7 @@ in
 {
   imports = [
     ./bash.nix
+    ./zsh.nix
     inputs.catppuccin.homeModules.catppuccin
     ./waybar.nix
     ./hyprpaper.nix
