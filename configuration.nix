@@ -9,12 +9,17 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
-
+  # Boot
+  boot = {
+    initrd.systemd.enable = true;
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+    plymouth = {
+      enable = true;
+      theme = "bgrt";
+    };
+  };
   # Use the systemd-boot EFI boot loader.
-  boot.initrd.systemd.enable = true;
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.plymouth.enable = true;
 
   swapDevices = [{
     device = "/var/lib/swapfile";
