@@ -19,6 +19,8 @@
       enable = true;
       theme = "bgrt";
     };
+    # Use latest kernel.
+    kernelPackages = pkgs.linuxPackages_latest;
   };
   # Use the systemd-boot EFI boot loader.
 
@@ -26,9 +28,6 @@
     device = "/var/lib/swapfile";
     size = 16*1024; # 16 GB due to integer requirement
   }];
-
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Enable OpenGL explicitly
   # hardware.graphics.enable = true; # formerly hardware.opengl
