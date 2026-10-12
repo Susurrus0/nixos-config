@@ -30,6 +30,9 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  # Enable OpenGL explicitly
+  hardware.graphics.enable = true; # formerly hardware.opengl
+
   networking.hostName = "x280"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
