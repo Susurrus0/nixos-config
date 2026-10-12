@@ -24,7 +24,7 @@
 
   swapDevices = [{
     device = "/var/lib/swapfile";
-    size = 15.5*1024; # 15.5 GB to match physical RAM
+    size = 16*1024; # 16 GB due to integer requirement
   }];
 
   # Use latest kernel.
