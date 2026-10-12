@@ -21,6 +21,12 @@
     };
     # Use latest kernel.
     kernelPackages = pkgs.linuxPackages_latest;
+    kernelParams = [
+      "quiet" "splash" "loglevel=3"
+      "rd.systemd.show_status=false"
+      "rd.udev.log_level=3"
+      "udev.log_priority=3"
+    ];
   };
   # Use the systemd-boot EFI boot loader.
 
