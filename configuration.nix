@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
+
   # Boot
   boot = {
     initrd.systemd.enable = true;
@@ -23,7 +24,7 @@
 
   swapDevices = [{
     device = "/var/lib/swapfile";
-    size = 16*1024; # 16 GB
+    size = 15.5*1024; # 15.5 GB to match physical RAM
   }];
 
   # Use latest kernel.
